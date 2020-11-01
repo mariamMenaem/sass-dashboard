@@ -1,0 +1,53 @@
+@import "./resets";
+@import "./mixines";
+
+.app-wrapper {
+    @include float-handler;
+    .sidebar-wrapper {
+        float: left;
+        min-height: 100vh;
+        min-width: 20%;
+        background-color: grey;
+
+        .sidebar-heading {
+            font-size: 20px;
+            color: white;
+            line-height: 50px;
+            text-align: center;
+            background: #1b1b1b;
+            text-transform: capitalize;
+        }
+    }
+
+    .content-wrapper {
+        padding: 15px;
+        float: right;
+        min-width: 80%;
+        border: 1px solid grey;
+    }
+}
+
+.menue-item{
+    height: 65px;
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    padding-left: 30px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-left: 5px solid transparent;
+    font-family: 'Open Sans', sans-serif;
+    transition: all .5s ease;
+
+    a{
+        color: white;
+        text-transform: capitalize;
+    }
+
+    &:hover{
+        border-left: 5px solid #b93632;
+        a{
+            color: #b93632;
+        }
+    }
+}
