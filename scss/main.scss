@@ -1,5 +1,6 @@
 @import "./resets";
 @import "./mixines";
+@import "./variables";
 
 .app-wrapper {
     @include float-handler;
@@ -7,14 +8,14 @@
         float: left;
         min-height: 100vh;
         min-width: 20%;
-        background-color: grey;
+        background-color: lightgray;
 
         .sidebar-heading {
             font-size: 20px;
-            color: white;
+            color: darkslategrey;
             line-height: 50px;
             text-align: center;
-            background: #1b1b1b;
+            background: darkgray;
             text-transform: capitalize;
         }
     }
@@ -22,8 +23,7 @@
     .content-wrapper {
         padding: 15px;
         float: right;
-        min-width: 80%;
-        border: 1px solid grey;
+        width: 80%;
     }
 }
 
@@ -40,7 +40,7 @@
     transition: all .5s ease;
 
     a{
-        color: white;
+        color: darkslategrey;
         text-transform: capitalize;
     }
 
@@ -51,3 +51,4 @@
         }
     }
 }
+

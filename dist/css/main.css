@@ -17,23 +17,22 @@
   float: left;
   min-height: 100vh;
   min-width: 20%;
-  background-color: grey;
+  background-color: lightgray;
 }
 
 .app-wrapper .sidebar-wrapper .sidebar-heading {
   font-size: 20px;
-  color: white;
+  color: darkslategrey;
   line-height: 50px;
   text-align: center;
-  background: #1b1b1b;
+  background: darkgray;
   text-transform: capitalize;
 }
 
 .app-wrapper .content-wrapper {
   padding: 15px;
   float: right;
-  min-width: 80%;
-  border: 1px solid grey;
+  width: 80%;
 }
 
 .menue-item {
@@ -51,7 +50,7 @@
 }
 
 .menue-item a {
-  color: white;
+  color: darkslategrey;
   text-transform: capitalize;
 }
 
